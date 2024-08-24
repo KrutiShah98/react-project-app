@@ -1,4 +1,5 @@
 'use client'
 import {memo} from 'react';
 
-export const EmptyWidget = memo(({addWidget}) => <div style={{width: '100px', height: '100px', backgroundColor: 'white', margin: '4px', color: 'black', border: '1px solid yellow'}}><button onClick={addWidget}>add</button></div>);
+export const EmptyWidget = memo(({addWidget}) => <div style={{width: '330px', height: '200px', backgroundColor: 'white',  color: 'black',display:'flex',alignItems:'center',justifyContent:'center',borderRadius:'6px'}}>
+    <button onClick={addWidget}>Add Widget</button></div>);

@@ -3,7 +3,9 @@
 import {memo} from 'react';
 
 export const Widget = memo(({text, removeWidget, id, index}) => (
-    <div style={{width: '100px', height: '100px', backgroundColor: 'white', color: 'black', border: '1px solid yellow', margin: '4px'}}>{text} {id}
-    <button onClick={() => removeWidget(index)}>remove</button>
+    <div style={{width: '330px', height: '200px', backgroundColor: 'white',  color: 'black',display:'flex',alignItems:'center',justifyContent:'center',borderRadius:'6px',marginRight:'20px'}}>{text} {id}
+    <br /><div>
+    <button onClick={() => removeWidget(index)}>Remove</button>
+    </div>
     </div>
 ));
