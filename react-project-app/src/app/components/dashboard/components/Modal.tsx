@@ -9,7 +9,9 @@ export const Modal = ({widgets, setWidgets, onClose}) => {
 
     const [selectedValues, setSelectedValues] = useState(new Set(widgets[selectedTab].map(({id}) => id)));
 
-    return(<>
+    return(
+    <>
+    <div style={{marginTop:'20px'}}>
         {CATEGORIES.map(({id, name}) => 
             <button style={{color: selectedTab === id ? 'blue' : 'black' }} onClick={() => {
                 setSelectedTab(id)
@@ -38,6 +40,8 @@ export const Modal = ({widgets, setWidgets, onClose}) => {
             }))
             onClose()
         }}>confirm</button>
+                </div>
+
         </>
         )
 }

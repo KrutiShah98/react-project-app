@@ -1,13 +1,10 @@
 export const CATEGORIES = [{
-    name: 'Category 1',
+    name: 'CSPM Executive Dashboard',
     id: '1'
 },{
-    name: 'Category 2',
+    name: 'CWPP Dashboard',
     id: '2'
 },{
-    name: 'Category 3',
+    name: 'Registry Scan',
     id: '3'
-},{
-    name: 'Category 4',
-    id: '4'
 }]
