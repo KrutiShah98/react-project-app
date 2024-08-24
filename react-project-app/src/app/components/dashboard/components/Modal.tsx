@@ -11,7 +11,7 @@ export const Modal = ({widgets, setWidgets, onClose}) => {
 
     return(
     <>
-    <div style={{marginTop:'20px'}}>
+    {/* <div style={{marginTop:'20px',backgroundColor:'red'}}> */}
         {CATEGORIES.map(({id, name}) => 
             <button style={{color: selectedTab === id ? 'blue' : 'black' }} onClick={() => {
                 setSelectedTab(id)
@@ -40,7 +40,7 @@ export const Modal = ({widgets, setWidgets, onClose}) => {
             }))
             onClose()
         }}>confirm</button>
-                </div>
+                {/* </div> */}
 
         </>
         )
